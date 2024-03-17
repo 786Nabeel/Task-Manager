@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* color: white; */
+}
+
+.header {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: khaki;
+}
+.container
+{
+  width:90%;
+  margin:auto;
+}
+#h2
+{
+  background-image: repeating-radial-gradient(orange,pink,yellow,red,green);
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.list
+{
+  background-image:repeating-linear-gradient(green,orange,yellow,pink,red,cyan,violet);
+}
+thead,tr{
+  border:3px solid black;
+
+}
+th,td{
+  border:2px dotted rebeccapurple;
+}
+.appHeader
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: aquamarine;
+}
+
+#taskList
+{
+  background-color: burlywood;
+  color:chocolate;
+  margin-right: 80%;
+}
