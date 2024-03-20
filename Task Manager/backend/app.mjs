@@ -5,7 +5,7 @@ import { Tasks } from "./db/tasks.mjs";
 import { appConfig } from "./config/config.mjs";
 appConfig(app);
 
-// Create a new Booking
+// Create a new Task
 app.post("/tasks", async (req, res) => {
 
   try {
@@ -22,7 +22,7 @@ app.post("/tasks", async (req, res) => {
   }
 });
 
-// Read all employees
+// Read all Tasks
 app.get("/tasks", async (req, res) => {
   try {
     const tasks = await Tasks.find();
@@ -32,7 +32,7 @@ app.get("/tasks", async (req, res) => {
   }
 });
 
-// Read a specific employee by ID
+// Read a specific Task by ID
 app.get("/tasks/:id", async (req, res) => {
   try {
     const task = await Tasks.findOne({ taskId: req.params.id });
@@ -49,7 +49,7 @@ app.get("/tasks/:id", async (req, res) => {
   }
 });
 
-// Update an employee by ID
+// Update a Task by ID
 app.put("/tasks", async (req, res) => {
   console.log(req.body);
   try {
@@ -70,7 +70,7 @@ app.put("/tasks", async (req, res) => {
 });
 
 
-// DELETE endpoint to delete a booking by a bookingId
+// DELETE endpoint to delete a task by ID
 app.delete("/tasks", async (req, res) => {
   try {
     const deleteTask = await Tasks.findOneAndDelete({
